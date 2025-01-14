@@ -17,20 +17,6 @@ class DBManager {
         createTable(createTableString: DBMoviesTableCreationQuery)
     }
 
-    //    func createDatabase(dbName: String?) -> OpaquePointer? {
-    //        var db: OpaquePointer?
-    //        guard let dbPath = dbName else {
-    //            print("part1DbPath is nil.")
-    //            return nil
-    //        }
-    //        if sqlite3_open(dbPath, &db) == SQLITE_OK {
-    //            print("Successfully opened connection to database at \(dbPath)")
-    //            return db
-    //        } else {
-    //            print("Unable to open database.")
-    //            return nil
-    //        }
-    //    }
     func createDatabase(dbName: String?) -> OpaquePointer? {
         var db: OpaquePointer?
         guard let dbName = dbName else {
